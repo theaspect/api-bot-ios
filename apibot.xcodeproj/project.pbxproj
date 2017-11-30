@@ -29,7 +29,6 @@
 		B73F4ACE1E2CCC3E009208E2 /* WindowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F4AC91E2CCC3E009208E2 /* WindowService.swift */; };
 		B73F4ACF1E2CCC3E009208E2 /* WindowServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F4ACA1E2CCC3E009208E2 /* WindowServiceImpl.swift */; };
 		CBFF301DFC7B887C7383981A /* Pods_apibot_apibotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C1E8416645C5852E56C9F9 /* Pods_apibot_apibotTests.framework */; };
-		CE2018B31EA8BF3500A53DE1 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2018AA1EA8BF3500A53DE1 /* Swinject.framework */; };
 		CE3E26941F0A57E200D48695 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E26931F0A57E200D48695 /* Field.swift */; };
 		CE61B4571F0A3FCE003136A8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61B4561F0A3FCE003136A8 /* Global.swift */; };
 		CE61B4591F0A3FD3003136A8 /* ApplicationStateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61B4581F0A3FD3003136A8 /* ApplicationStateObserver.swift */; };
@@ -123,8 +122,6 @@
 		CE7B61621F4BFF82007BCA83 /* NSMutableData+MultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B61611F4BFF82007BCA83 /* NSMutableData+MultipartData.swift */; };
 		CEA5628E1FD067D8004EDF0A /* UIColor+apibot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5628D1FD067D8004EDF0A /* UIColor+apibot.swift */; };
 		CEA562931FD07168004EDF0A /* Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA562921FD07168004EDF0A /* Extra.swift */; };
-		CEAD2C2A1EAE08910088D771 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2018A21EA8BF3500A53DE1 /* Nimble.framework */; };
-		CEAD2C2B1EAE08910088D771 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2018A31EA8BF3500A53DE1 /* Quick.framework */; };
 		CEF1E2151F4E9759007EFCD4 /* UploadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1E2131F4E9759007EFCD4 /* UploadingView.swift */; };
 		CEF1E2161F4E9759007EFCD4 /* UploadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF1E2141F4E9759007EFCD4 /* UploadingView.xib */; };
 		CEF1E2211F4EE2FC007EFCD4 /* AlertViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1E21F1F4EE2FC007EFCD4 /* AlertViewBuilder.swift */; };
@@ -325,7 +322,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2018B31EA8BF3500A53DE1 /* Swinject.framework in Frameworks */,
 				A0214B5E2AE0BF3CCB777C17 /* Pods_apibot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,8 +330,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEAD2C2A1EAE08910088D771 /* Nimble.framework in Frameworks */,
-				CEAD2C2B1EAE08910088D771 /* Quick.framework in Frameworks */,
 				CBFF301DFC7B887C7383981A /* Pods_apibot_apibotTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -841,7 +835,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B72E27D81E28980F0002C6DA /* Build configuration list for PBXNativeTarget "apibot" */;
 			buildPhases = (
-				CEA5628F1FD068B5004EDF0A /* Carhage Run Script */,
 				4D022F44B892FEB71949F04A /* [CP] Check Pods Manifest.lock */,
 				B72E27AC1E28980E0002C6DA /* Sources */,
 				B72E27AD1E28980E0002C6DA /* Frameworks */,
@@ -1093,21 +1086,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
-		};
-		CEA5628F1FD068B5004EDF0A /* Carhage Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
-			);
-			name = "Carhage Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		CEAD2C291EAE08590088D771 /* Carthage Run Script */ = {
 			isa = PBXShellScriptBuildPhase;

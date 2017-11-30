@@ -7,6 +7,7 @@ target 'apibot' do
   # Pods for capp
 
   pod 'ApiAI'
+  pod 'Swinject', '~> 2.1.0'
 
   target 'apibotTests' do
 

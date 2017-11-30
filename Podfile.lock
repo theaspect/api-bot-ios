@@ -24,13 +24,16 @@ PODS:
     - ApiAI/Core
   - ApiAI/VoiceRequest (0.7.2):
     - ApiAI/Core
+  - Swinject (2.1.1)
 
 DEPENDENCIES:
   - ApiAI
+  - Swinject (~> 2.1.0)
 
 SPEC CHECKSUMS:
   ApiAI: d4b49d3736f33ce6f3ef66dc33c0e0fccb23579e
+  Swinject: afea49fd95f392b41171669f165842879c48fad6
 
-PODFILE CHECKSUM: b9ca3edff8ab323225d4a81dfbbb90be9d8b6ceb
+PODFILE CHECKSUM: 9e12f89e605204643be3604d7086592b24ec8ac3
 
 COCOAPODS: 1.2.1
