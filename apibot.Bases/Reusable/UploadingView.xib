@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadingView" customModule="safesensor" customModuleProvider="target">
+            <connections>
+                <outlet property="lblLoading" destination="SeR-0h-QG3" id="c05-zI-z4s"/>
+                <outlet property="pbProgress" destination="E9f-as-1nI" id="vhv-y1-gJh"/>
+                <outlet property="vwLoading" destination="geB-6Q-u2L" id="fac-JO-78i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geB-6Q-u2L">
+                    <rect key="frame" x="40" y="12" width="240" height="85"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Идет загрузка файла" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeR-0h-QG3">
+                            <rect key="frame" x="8" y="8" width="224" height="46"/>
+                            <accessibility key="accessibilityConfiguration" identifier="lblLoadTitle"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E9f-as-1nI">
+                            <rect key="frame" x="8" y="63" width="224" height="2"/>
+                            <accessibility key="accessibilityConfiguration" identifier="pbProgress"/>
+                        </progressView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration" identifier="vwLoadContainer"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="SeR-0h-QG3" secondAttribute="trailing" constant="8" id="0EM-a4-jA6"/>
+                        <constraint firstItem="E9f-as-1nI" firstAttribute="top" secondItem="SeR-0h-QG3" secondAttribute="bottom" constant="9" id="GS5-hB-Ece"/>
+                        <constraint firstItem="SeR-0h-QG3" firstAttribute="top" secondItem="geB-6Q-u2L" secondAttribute="top" constant="8" id="idh-xj-5FR"/>
+                        <constraint firstItem="SeR-0h-QG3" firstAttribute="leading" secondItem="geB-6Q-u2L" secondAttribute="leading" constant="8" id="lNQ-Xe-iIH"/>
+                        <constraint firstAttribute="height" constant="85" id="o7c-sZ-R92"/>
+                        <constraint firstAttribute="trailing" secondItem="E9f-as-1nI" secondAttribute="trailing" constant="8" id="oqc-Nc-ojX"/>
+                        <constraint firstAttribute="bottom" secondItem="E9f-as-1nI" secondAttribute="bottom" constant="20" id="tD1-3U-gzi"/>
+                        <constraint firstItem="E9f-as-1nI" firstAttribute="leading" secondItem="geB-6Q-u2L" secondAttribute="leading" constant="8" id="ysz-rc-5Ma"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration" identifier="view"/>
+            <constraints>
+                <constraint firstItem="geB-6Q-u2L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="1Gu-uK-0Fc"/>
+                <constraint firstItem="geB-6Q-u2L" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="P4t-qO-Vur"/>
+                <constraint firstItem="geB-6Q-u2L" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fhM-M2-Ttp"/>
+                <constraint firstAttribute="trailing" secondItem="geB-6Q-u2L" secondAttribute="trailing" constant="40" id="js4-9X-Vw0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-107" y="78.5"/>
+        </view>
+    </objects>
+</document>

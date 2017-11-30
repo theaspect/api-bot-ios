@@ -1,0 +1,42 @@
+//
+//  {{ module_info.name }}ModuleConfigurator.swift
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+import Swinject
+
+class {{ module_info.name }}ModuleConfigurator {
+
+    // MARK - initial
+    
+    public var viewController: {{ module_info.name }}ViewController!
+    public var moduleInput: {{ module_info.name }}ModuleInput!
+
+    init(resolver: Resolver,
+        inputData: {{ module_info.name }}InputDataModel) 
+    {
+        let {{ module_info.name | downcase }}ViewController = {{ module_info.name }}ViewController()
+
+        let router = {{ module_info.name }}Router(controller: {{ module_info.name | downcase }}ViewController)
+
+        let presenter = {{ module_info.name }}Presenter()
+        presenter.view = {{ module_info.name | downcase }}ViewController
+        presenter.router = router
+        presenter.baseView = {{ module_info.name | downcase }}ViewController
+
+        let interactor = {{ module_info.name }}Interactor()
+        interactor.output = presenter
+        interactor.baseOutput = presenter
+
+        presenter.interactor = interactor
+        {{ module_info.name | downcase }}ViewController.output = presenter
+        
+        viewController = {{ module_info.name | downcase }}ViewController
+        moduleInput = presenter
+    }
+
+}

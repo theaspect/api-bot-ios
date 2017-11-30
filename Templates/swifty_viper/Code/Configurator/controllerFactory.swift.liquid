@@ -1,0 +1,14 @@
+//
+//  {{ module_info.name }}ControllerFactory.swift
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+class {{ module_info.name }}ControllerFactory: BaseControllerFactory<{{ module_info.name }}ModuleConfigurator, {{ module_info.name }}InputDataModel> {
+    
+    override func controller(input: {{ module_info.name }}InputDataModel) -> {{ module_info.name }}ModuleConfigurator? {
+        return container.resolve({{ module_info.name }}ModuleConfigurator.self, argument: input)
+    }
+}

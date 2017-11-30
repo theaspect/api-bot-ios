@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SnackToast" customModule="safesensor" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAction" destination="B8L-fE-Pee" id="QNJ-Zk-G6U"/>
+                <outlet property="lblText" destination="joq-ZZ-TXJ" id="n5n-xZ-LyE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aerhsrtjrtjhrtyjrtjw5je56j" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="joq-ZZ-TXJ">
+                    <rect key="frame" x="10" y="0.0" width="216" height="36"/>
+                    <accessibility key="accessibilityConfiguration" identifier="lblText"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8L-fE-Pee">
+                    <rect key="frame" x="237" y="6" width="73" height="25"/>
+                    <accessibility key="accessibilityConfiguration" identifier="btnCancel"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="5fV-Au-YY4"/>
+                        <constraint firstAttribute="height" constant="25" id="WjJ-NH-HkF"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onButtonOpen:" destination="-1" eventType="touchUpInside" id="yoN-NX-rRx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration" identifier="view"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="B8L-fE-Pee" secondAttribute="bottom" constant="5" id="DCZ-oL-yaM"/>
+                <constraint firstItem="B8L-fE-Pee" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="N4q-px-ogj"/>
+                <constraint firstItem="joq-ZZ-TXJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="RJk-8T-41d"/>
+                <constraint firstAttribute="trailing" secondItem="B8L-fE-Pee" secondAttribute="trailing" constant="10" id="VnT-PI-yq3"/>
+                <constraint firstItem="B8L-fE-Pee" firstAttribute="leading" secondItem="joq-ZZ-TXJ" secondAttribute="trailing" constant="11" id="ZK5-qY-8T7"/>
+                <constraint firstAttribute="bottom" secondItem="joq-ZZ-TXJ" secondAttribute="bottom" id="bR4-D3-dmJ"/>
+                <constraint firstItem="joq-ZZ-TXJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fWZ-3h-ZiG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-61" y="-57"/>
+        </view>
+    </objects>
+</document>

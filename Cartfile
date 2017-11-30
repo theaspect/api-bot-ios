@@ -1,0 +1,2 @@
+# Dependency Injection framefwork
+github "Swinject/Swinject" ~> 2.0.0

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CodeTimerView" customModule="safesensor" customModuleProvider="target">
+            <connections>
+                <outlet property="lblTimer" destination="HA6-xZ-EkP" id="NC1-og-ogT"/>
+                <outlet property="timerBar" destination="haZ-90-QP7" id="I4I-9B-Epe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Код действителен еще n секунд" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HA6-xZ-EkP">
+<accessibility key="accessibilityConfiguration" identifier="lblTimer"/>
+<rect key="frame" x="16" y="70" width="343" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="haZ-90-QP7">
+<accessibility key="accessibilityConfiguration" identifier="timerBar"/>
+<rect key="frame" x="97" y="57" width="180" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="9gY-N8-h0T"/>
+                    </constraints>
+                    <color key="progressTintColor" red="0.30618613960000002" green="0.76077622180000004" blue="0.2983746827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="trackTintColor" red="0.85896611209999996" green="0.88384157419999998" blue="0.91105663780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="haZ-90-QP7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="221-Od-OGD"/>
+                <constraint firstAttribute="bottom" secondItem="HA6-xZ-EkP" secondAttribute="bottom" constant="20" id="8pz-uo-Vvj"/>
+                <constraint firstAttribute="trailing" secondItem="HA6-xZ-EkP" secondAttribute="trailing" constant="16" id="ATV-MB-Pvy"/>
+                <constraint firstItem="HA6-xZ-EkP" firstAttribute="top" secondItem="haZ-90-QP7" secondAttribute="bottom" constant="11" id="MkQ-CD-0Lg"/>
+                <constraint firstItem="HA6-xZ-EkP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="OkO-yz-m5R"/>
+                <constraint firstItem="HA6-xZ-EkP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bHQ-Sc-4ez"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="26.5" y="-229"/>
+        </view>
+    </objects>
+</document>

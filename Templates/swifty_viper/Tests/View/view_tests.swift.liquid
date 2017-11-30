@@ -1,0 +1,36 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Quick
+
+import Nimble
+
+@testable import {{ module_info.project_name }}
+
+class {{ module_info.name | append: 'ViewTests' }}: QuickSpec {
+	override func spec() {
+        
+        describe("{{ module_info.name | append: 'ViewController' }}") {
+            
+            var className: {{ module_info.name | append: 'ViewController' }}!
+            
+            beforeEach {
+                var className = {{ module_info.name | append: 'View' }}()
+            }
+            
+            context("") {
+                beforeEach {
+                
+                }
+                it("") {
+                    
+                }
+            }
+        }
+    }
+}

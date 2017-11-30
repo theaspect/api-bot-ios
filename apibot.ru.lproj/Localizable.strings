@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  safesensor
+
+  Created by Anton Skorodumov on 05.07.17.
+  Copyright © 2017 E-Lite-Telecom. All rights reserved.
+*/
+
+"FIRST_PAGE_TITLE"  = "Камера";
+"SECOND_PAGE_TITLE" = "События";
+"SETTINGS_TITLE" = "Настроить режим охраны";
+
+"OK"        = "Открыть";
+"CANCEL"    = "Отмена";
+"ADD"       = "Добавить";
+"DELETE"    = "Удалить";
+
+"ASK_ADD_USER" = "Добавить нового пользователя?";
+"ASK_DELETE_USER" = "Удалить пользователя?";
+
+"ERROR"     = "Ошибка";
+
+"YOU_ARE_HOME" = "Вы дома?";
+"OF_COURCE" = "Конечно!";
+"NO" = "Нет";
+"LOADING_IN_PROGRESS" = "Идет загрузка";
+
+"CONTINUE" = "Подключение к Wi-Fi";
+
+"IMAGE_PICKER_SERVICE_CAMERA" = "Камера";
+"IMAGE_PICKER_SERVICE_GALLARY" = "Галерея";
+"IMAGE_PICKER_NO_PERMITIONS" = "Доступ закрыт. Откройте его в настройках телефона";
